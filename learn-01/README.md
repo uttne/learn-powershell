@@ -55,7 +55,7 @@ Alias           cd -> Set-Location
 ---
 # よく使うコマンド (Get-Content)
 
-ファイルの内容を読み込むときに使用する
+Linux の `cat` のようにファイルの内容を読み込むときに使用する
 
 ```powershell
 > Get-Content .\test.json
@@ -74,7 +74,7 @@ Alias           cd -> Set-Location
 ---
 # よく使うコマンド (Select-String)
 
-Linux の grep のように正規表現で一致する行を取得する
+Linux の `grep` のように正規表現で一致する行を取得する
 
 ```powershell
 > Get-Content .\test.json | Select-String test
@@ -99,8 +99,8 @@ data 2
 ---
 # よく使うコマンド (Where-Object)
 
-grep のオブジェクト版のような機能
-C# の LINQ の Where や JavaScript の filter のような働き
+`grep` のオブジェクト版のような機能
+C# の LINQ の `Where` や JavaScript の `filter` のような働き
 `?` という記号がエイリアスに設定されている
 
 ```powershell
@@ -115,7 +115,7 @@ test 1
 # よく使うコマンド (ForEach-Object)
 
 データストリームに対する射影機能
-C# の LINQ の Select や JavaScript の map のような動き
+C# の LINQ の `Select` や JavaScript の `map` のような動き
 `%` という記号のエイリアスが設定されている
 
 ```powershell
@@ -128,7 +128,7 @@ C# の LINQ の Select や JavaScript の map のような動き
 ---
 # よく使うコマンド (Get-NetIPAddress)
 
-ipconfig や ifconfig のようにネットワークインターフェースの情報を取得する
+cmd.exe の `ipconfig` や Linux の `ifconfig` のようにネットワークインターフェースの情報を取得する
 
 ```powershell
 > Get-NetIPAddress
